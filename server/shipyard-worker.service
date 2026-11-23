@@ -1,0 +1,21 @@
+[Unit]
+Description=Shipyard background worker (deploys, jobs)
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=panel
+Group=panel
+WorkingDirectory=/srv/panel/shipyard/web
+Environment=NODE_ENV=production
+Environment=PATH=/opt/node/current/bin:/usr/bin:/bin
+Environment=HOME=/home/panel
+ExecStart=/opt/node/current/bin/node --conditions=react-server dist/worker.mjs
+Restart=always
+RestartSec=3
+KillSignal=SIGTERM
+TimeoutStopSec=900
+
+[Install]
+WantedBy=multi-user.target

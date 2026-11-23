@@ -1,0 +1,19 @@
+[Unit]
+Description=Shipyard control panel
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=panel
+Group=panel
+WorkingDirectory=/srv/panel/shipyard/web
+Environment=NODE_ENV=production
+Environment=PATH=/opt/node/current/bin:/usr/bin:/bin
+Environment=HOME=/home/panel
+ExecStart=/opt/node/current/bin/node node_modules/next/dist/bin/next start -p 3900 -H 127.0.0.1
+Restart=always
+RestartSec=3
+
+[Install]
+WantedBy=multi-user.target
