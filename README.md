@@ -2,7 +2,7 @@
 
 A private control panel for your own Linux server. Connect GitHub, pick a repository, and Shipyard builds it, runs it, and puts it live on your domain with HTTPS. After that you deploy, roll back, read logs, back up and restore from the browser instead of SSH.
 
-> Early release. It runs real sites in production, but expect rough edges. Back up anything important before installing on a server that already hosts sites.
+> **Early release.** The panel runs real sites in production, but the one-command installer is new and hasn't been tested on many servers yet. Use it on a **fresh** server, not one that already hosts sites, and please [open an issue](../../issues) if anything goes wrong.
 
 ## What it does
 
