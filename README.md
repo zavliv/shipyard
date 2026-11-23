@@ -30,7 +30,7 @@ A private control panel for your own Linux server. Connect GitHub, pick a reposi
 On a fresh server:
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/zavliv/shipyard/main/install.sh | sudo bash
+curl -fsSL https://raw.githubusercontent.com/zavliv/Shipyard/main/install.sh | sudo bash
 ```
 
 The installer asks for the panel domain, your email, the database and SMTP settings, then sets everything up. It takes about 5 minutes. When it's done:

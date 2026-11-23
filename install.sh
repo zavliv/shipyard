@@ -5,7 +5,7 @@
 # set NONINTERACTIVE=1 to fail instead of prompting.
 set -euo pipefail
 
-REPO_URL="${REPO_URL:-https://github.com/zavliv/shipyard.git}"
+REPO_URL="${REPO_URL:-https://github.com/zavliv/Shipyard.git}"
 REPO_BRANCH="${REPO_BRANCH:-main}"
 NODE_VERSION="${NODE_VERSION:-v24.14.1}"
 PANEL_PORT=3900
